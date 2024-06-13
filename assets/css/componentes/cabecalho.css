@@ -1,0 +1,68 @@
+:root {
+    --fonte-familia-corpo: 'Montserrat', sans-serif;
+    --fonte-familia-logo: 'Pacifico', cursive;
+    --fonte-peso-input: 300;
+    --fonte-tamanho-logo: 28px;
+    --fonte-tamanho-cartao-titulo: 28px;
+    --fonte-tamanho-input-label: 20px;
+    --fonte-tamanho-botao: 22px;
+    --fonte-tamanho-formulario-fieldset: 22px;
+    --fonte-tamanho-tabela-cabecalho: 22px;
+    --fonte-tamanho-modal-titulo: 28px;
+    --fonte-tamanho-modal-botao: 28px;
+    --cor-primaria: #0071ea;
+    --cor-secundaria: #d6eaff;
+    --cor-contraste-escuro: #4D4D4D;
+    --cor-contraste-claro: #fff;
+    --cor-aviso: #df2525;
+    --cor-sucesso: #047900;
+    --cor-transparencia: #4d4d4d33;
+    --sombra: 0 5px 10px #55a6ff38;
+}
+
+@media(min-width: 800px) {
+    :root {
+        --fonte-tamanho-logo: 56px;
+    }
+}
+
+.cabecalho {
+    background-color: var(--cor-contraste-claro);
+    border-radius: 0 0 10px 10px;
+    box-shadow: var(--sombra);
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    height: 4.75rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap; 
+}
+
+.cabecalho__logo {
+    width: 3rem;
+    margin-bottom: 0.5rem; 
+    display: flex; 
+    align-items: center; 
+}
+
+.cabecalho__titulo {
+    font-family: var(--fonte-familia-logo);
+    font-size: var(--fonte-tamanho-logo);
+    margin: 0 1rem 0.5rem 1rem; 
+}
+
+.cabecalho__lista-navegacao {
+    display: flex;
+    margin-bottom: 0.5rem; 
+}
+
+.cabecalho__link {
+    margin-left: 2rem;
+}
+
+
+@media (max-width: 600px) { 
+    .cabecalho__titulo {
+        font-size: 1.5em; 
+    }
+}
